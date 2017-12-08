@@ -1,0 +1,67 @@
+<div class="row">
+	<div class="container" >
+				<h1>Home</h1>
+				
+ <br/>
+	Available at: <a href="https://github.com/rlacey2/directivemerge109">https://github.com/rlacey2/directivemerge109</a>
+	<br/>		 		
+				
+
+				This example shows a directive being EXTENDED twice to generate new directives, inheriting some but not all attributes of the original directive.<br/>
+				From the html on the directive useage set parameters. <br/>
+				<br/>
+				Another feature is that the $scope variables are created via the html rather than in the controller, showing the two-way relationship.
+				In this example $scope.person is geneated and shared between all the directives. <br/>
+				Search for personDetailV1Directive[0] in directives.js
+
+				
+				
+				<div class="row">
+							<div class="col-md-12"> 
+									<person-detail-v1 
+													title="v1 Original" 
+													person="person">
+								   </person-detail-v1>	 						
+							</div>
+				</div>		
+				
+				<div class="row">
+							<div class="col-md-12"> 
+									<person-detail-v2 
+													title="v2 extended from v1" 
+													person="person">
+								   </person-detail-v2>	 						
+							</div>
+				</div>						
+				
+				<div class="row">
+							<div class="col-md-12"> 
+									<person-detail-v3 
+													title="v3 extended from v1" 
+													person="person">
+								   </person-detail-v3>	 						
+							</div>
+				</div>	
+
+				<div class="row">
+							<div class="col-md-12"> 
+									<person-detail-v4 
+													title="v4 extended from v1, controller changed" 
+													person="person">
+								   </person-detail-v4>	 						
+							</div>
+				</div>						
+				
+				
+
+				<div class="row">
+							<div class="col-md-12"> 
+									<person-detail-v1 
+													title="v1 Original - being used again" 
+													person="person">
+								   </person-detail-v1>	 						
+							</div>
+				</div>					
+	</div>
+</div>
+ 
